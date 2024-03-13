@@ -15,6 +15,10 @@ antigen bundle "greymd/docker-zsh-completion"
 export plugin=$(cat ~/.zshrc | grep "plugins=(git)") && sed -i "s/$plugin/plugins=(git docker docker-compose)/g" ~/.zshrc
 
 source ~/.zshrc
+
+# install nvm
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
 # install docker
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 # Add Docker's official GPG key:
