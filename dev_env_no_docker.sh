@@ -73,3 +73,6 @@ sudo systemctl start zookeeper.service
 sudo systemctl enable kafka.service
 sudo systemctl start kafka.service
 
+# Install keycloak https://www.keycloak.org/getting-started/getting-started-zip
+wget https://github.com/keycloak/keycloak/releases/download/24.0.4/keycloak-24.0.4.zip
+unzip keycloak-24.0.4.zip
